@@ -314,8 +314,8 @@ class PandocCommand(object):
             if sys.platform.startswith("win"):
                 from time import sleep
                 sleep(1)
-            if os.path.exists("pandoc.out"):
-                os.remove("pandoc.out")
+            #if os.path.exists("pandoc.out"):
+            #    os.remove("pandoc.out")
 
             # open file if needed
             if os.path.exists(self._output_file_path) and should_open:
